@@ -1,0 +1,13 @@
+<h1 class="title">Add a new Home</h1>
+<div class="container">
+  <%= simple_form_for(@flat) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :description %>
+    <%= f.submit %>
+  <% end %>
+</div>
+
+<div class="home">
+  <%= link_to 'Home', flats_path, class: 'btn btn-primary' %>
+</div>
